@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --color-primary: #1a5276;
+  --color-accent: #2ecc71;
+  --color-surface: #f8fafb;
+  --color-card: #ffffff;
+  --color-text-primary: #1c1c1e;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e9f0;
+  --color-gradient-start: #1a5276;
+  --color-gradient-end: #154360;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+/* Utility: hide scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Accessible focus styles */
+*:focus-visible {
+  outline: 2px solid #1a5276;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(26, 82, 118, 0.15);
+  color: #1a5276;
+}
